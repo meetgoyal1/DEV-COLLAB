@@ -25,7 +25,8 @@ const io = new Server(server, {
 });
 
 socketHandler(io);
-
+console.log("CLIENT_URL:", process.env.CLIENT_URL);
+console.log("clientOrigin:", clientOrigin);
 app.use(cors({
   origin: clientOrigin,
   credentials: true,
