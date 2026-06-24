@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getRoom } from "../api/rooms";
 import { useSocket } from "../context/SocketContext";
 import ChatPanel from "../components/chat/ChatPanel";
-import EditorPanel from "../components/editor/EditorPanel";
+import EditorPanel from "../components/Editor/EditorPanel";
 
 const RoomPage = () => {
   const { id } = useParams();
